@@ -16,8 +16,15 @@
 #  You should have received a copy of the GNU Lesser General Public License
 #  along with Pyrogram.  If not, see <http://www.gnu.org/licenses/>.
 
+from .birthday import Birthday
+from .business_info import BusinessInfo
+from .business_message import BusinessMessage
+from .business_recipients import BusinessRecipients
+from .business_weekly_open import BusinessWeeklyOpen
+from .business_working_hours import BusinessWorkingHours
 from .chat import Chat
 from .chat_admin_with_invite_links import ChatAdminWithInviteLinks
+from .chat_color import ChatColor
 from .chat_event import ChatEvent
 from .chat_event_filter import ChatEventFilter
 from .chat_invite_link import ChatInviteLink
@@ -32,15 +39,23 @@ from .chat_privileges import ChatPrivileges
 from .chat_reactions import ChatReactions
 from .dialog import Dialog
 from .emoji_status import EmojiStatus
+from .folder import Folder
 from .invite_link_importer import InviteLinkImporter
 from .restriction import Restriction
 from .user import User
+from .username import Username
 from .video_chat_ended import VideoChatEnded
 from .video_chat_members_invited import VideoChatMembersInvited
 from .video_chat_scheduled import VideoChatScheduled
 from .video_chat_started import VideoChatStarted
 
 __all__ = [
+    "Birthday",
+    "BusinessInfo",
+    "BusinessMessage",
+    "BusinessRecipients",
+    "BusinessWeeklyOpen",
+    "BusinessWorkingHours",
     "Chat",
     "ChatMember",
     "ChatPermissions",
@@ -48,12 +63,14 @@ __all__ = [
     "ChatPreview",
     "Dialog",
     "User",
+    "Username",
     "Restriction",
     "ChatEvent",
     "ChatEventFilter",
     "ChatInviteLink",
     "InviteLinkImporter",
     "ChatAdminWithInviteLinks",
+    "ChatColor",
     "VideoChatStarted",
     "VideoChatEnded",
     "VideoChatMembersInvited",
@@ -63,5 +80,6 @@ __all__ = [
     "ChatPrivileges",
     "ChatJoiner",
     "EmojiStatus",
+    "Folder",
     "ChatReactions"
 ]

@@ -65,7 +65,7 @@ If you'd like to support Pyrogram, you can consider:
 ### Installing
 
 ``` bash
-pip3 install pyrogram
+pip install 'pyrogram @ git+https://github.com/ysravankumar/pyrogram.git'
 ```
 
 ### Resources
